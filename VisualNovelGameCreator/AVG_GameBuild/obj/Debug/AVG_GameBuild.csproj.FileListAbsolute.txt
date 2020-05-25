@@ -1,0 +1,19 @@
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\bin\Debug\AVG_GameBuild.exe.config
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\bin\Debug\AVG_GameBuild.exe
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\bin\Debug\AVG_GameBuild.pdb
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\AVG_GameBuild.csprojAssemblyReference.cache
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\GamePage.g.cs
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\MainWindow.g.cs
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\App.g.cs
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\AVG_GameBuild_MarkupCompile.cache
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\AVG_GameBuild_MarkupCompile.lref
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\GamePage.baml
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\MainWindow.baml
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\AVG_GameBuild.g.resources
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\AVG_GameBuild.Properties.Resources.resources
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\AVG_GameBuild.csproj.GenerateResource.cache
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\AVG_GameBuild.exe
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\AVG_GameBuild.pdb
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\bin\Debug\Resources\Please Come Back.mp3
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\obj\Debug\AVG_GameBuild_Content.g.cs
+C:\Users\Leo Ngan\source\repos\AVG_GameBuild\AVG_GameBuild\bin\Debug\Resources\dayofumbrellaandrain.wav

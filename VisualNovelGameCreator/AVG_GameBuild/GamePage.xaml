@@ -1,0 +1,83 @@
+﻿<Page x:Name="MainGamePage" x:Class="AVG_GameBuild.GamePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AVG_GameBuild"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="GamePage">
+    <Page.Background>
+        <ImageBrush ImageSource="Resources/BathRoomDark.jpg" Stretch="UniformToFill"/>
+    </Page.Background>
+
+
+
+    <Grid x:Name="Grid1">
+        <Grid x:Name="CharacterImageGrid" Margin="0,32,0,0" Width="792" Height="387">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="370*"/>
+                <ColumnDefinition Width="423*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="Portrait1" HorizontalAlignment="Left" Height="367" Margin="10,10,0,10" Width="254" Source="Resources/Iggy.png"/>
+            <Image x:Name="Portrait2" Height="367" Margin="269,10" Width="254" Source="Resources/Kakyoin.png" Grid.ColumnSpan="2"/>
+            <Image x:Name="Portrait3" HorizontalAlignment="Right" Height="367" Margin="0,10,10,10" Width="254" Source="Resources/Avdol.png" Grid.Column="1"/>
+        </Grid>
+        <TextBox x:Name="ConversationBox" Height="92" Margin="15,0,15,15" IsReadOnly="True" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom" Background="#99505050" Foreground="White" FontSize="20" Cursor="Arrow" BorderBrush="White"/>
+        <Button x:Name="NextButton" Content="&gt;Next&gt;" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="75" RenderTransformOrigin="0.5,0.5" Height="30" FontSize="14" HorizontalAlignment="Right" Click="NextButton_Click" Background="#CCB4B4B4" BorderBrush="White" Foreground="Black"/>
+        <ToolBarTray x:Name="ToolBarTray1" Height="26" VerticalAlignment="Top" Width="792">
+            <ToolBar Margin="0" RenderTransformOrigin="0.5,0.5" Width="792" Height="26">
+                <Menu x:Name="Menu1" Height="21" VerticalAlignment="Top" Width="50">
+                    <MenuItem Header="Menu" Margin="0" FontSize="14">
+                        <MenuItem x:Name="Return" Header="Main Menu" Margin="0"/>
+                        <MenuItem x:Name="Volume" Header="Volume" Margin="0">
+                            <MenuItem Header="Music Volume" Margin="0" Width="134"/>
+                            <Slider x:Name="VolumeSlider" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="0,0,-26,0" Value="10"/>
+                        </MenuItem>
+                        <MenuItem x:Name="Speed" Header="Text Speed" Margin="0">
+                            <MenuItem Header="Text Speed" Margin="0" Width="134"/>
+                            <Slider x:Name="SpeedSlider" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="0,0,-26,0" ValueChanged="Slider_ValueChanged"/>
+                        </MenuItem>
+                        <MenuItem x:Name="Quit" Header="Quit Game" Margin="0"/>
+                    </MenuItem>
+                </Menu>
+                <Menu x:Name="Save" Height="21" VerticalAlignment="Top" Width="46">
+                    <MenuItem x:Name="SaveMenu" Header="Saves" Margin="0" Height="21" Width="50" FontSize="14">
+                        <MenuItem x:Name="SaveToSlots" Header="Saves" Margin="0">
+                            <MenuItem x:Name="SaveSlot1" Header="Save Slot 1" Margin="0" Click="SaveMenuItem_Click" Tag = "1"/>
+                            <MenuItem x:Name="SaveSlot2" Header="Save Slot 2" Margin="0" Click="SaveMenuItem_Click" Tag = "2"/>
+                            <MenuItem x:Name="SaveSlot3" Header="Save Slot 3" Margin="0" Click="SaveMenuItem_Click" Tag = "3"/>
+                            <MenuItem x:Name="SaveSlot4" Header="Save Slot 4" Margin="0" Click="SaveMenuItem_Click" Tag = "4"/>
+                            <MenuItem x:Name="SaveSlot5" Header="Save Slot 5" Margin="0" Click="SaveMenuItem_Click" Tag = "5"/>
+                            <MenuItem x:Name="SaveSlot6" Header="Save Slot 6" Margin="0" Click="SaveMenuItem_Click" Tag = "6"/>
+                            <MenuItem x:Name="SaveSlot7" Header="Save Slot 7" Margin="0" Click="SaveMenuItem_Click" Tag = "7"/>
+                            <MenuItem x:Name="SaveSlot8" Header="Save Slot 8" Margin="0" Click="SaveMenuItem_Click" Tag = "8"/>
+                        </MenuItem>
+                        <MenuItem x:Name="LoadFromSlots" Header="Load">
+                            <MenuItem x:Name="LoadSlots1" Header="Save Slot 1" Margin="0" Click="LoadMenuItem_Click" Tag = "1"/>
+                            <MenuItem x:Name="LoadSlots2" Header="Save Slot 2" Margin="0" Click="LoadMenuItem_Click" Tag = "2"/>
+                            <MenuItem x:Name="LoadSlots3" Header="Save Slot 3" Margin="0" Click="LoadMenuItem_Click" Tag = "3"/>
+                            <MenuItem x:Name="LoadSlots4" Header="Save Slot 4" Margin="0" Click="LoadMenuItem_Click" Tag = "4"/>
+                            <MenuItem x:Name="LoadSlots5" Header="Save Slot 5" Margin="0" Click="LoadMenuItem_Click" Tag = "5"/>
+                            <MenuItem x:Name="LoadSlots6" Header="Save Slot 6" Margin="0" Click="LoadMenuItem_Click" Tag = "6"/>
+                            <MenuItem x:Name="LoadSlots7" Header="Save Slot 7" Margin="0" Click="LoadMenuItem_Click" Tag = "7"/>
+                            <MenuItem x:Name="LoadSlots8" Header="Save Slot 8" Margin="0" Click="LoadMenuItem_Click" Tag = "8"/>
+                        </MenuItem>
+                    </MenuItem>
+                </Menu>
+                <Button Content="Logs" Height="24" VerticalAlignment="Top" Width="46" FontSize="14" Margin="0,0,0,-3" Click="Button_Click"/>
+            </ToolBar>
+        </ToolBarTray>
+        <Grid x:Name="LogGrid" Margin="0,30,0,0" Height="384" Width="792" d:IsHidden="True">
+            <TextBox x:Name="LogTextBox" TextWrapping="Wrap" Margin="10,0,20,10" IsReadOnly="True" Foreground="#CC000000" FontSize="20" Background="#99FFFFFF"/>
+            <Button x:Name="CloseLog" Content="×" HorizontalAlignment="Right" VerticalAlignment="Top" Width="20" Margin="0,0,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Height="20" Click="CloseLog_Click" FontWeight="Bold" FontSize="14" Background="#99505050" BorderBrush="White" Foreground="White"/>
+        </Grid>
+        <Grid x:Name="ChoiceGrid" HorizontalAlignment="Center" Height="135" VerticalAlignment="Center" Width="300" Margin="0,5,0,0">
+            <Button x:Name="Choice1" Content=" Choice #1" HorizontalAlignment="Center" Margin="10,10,10,0" VerticalAlignment="Top" Width="280" Height="30" Click="Choice1_Click" HorizontalContentAlignment="Left" FontSize="15" Background="#CCB9B4B4" BorderBrush="White" Foreground="#FF141414"/>
+            <Button x:Name="Choice2" Content=" Choice #2" HorizontalAlignment="Center" Margin="10,35" VerticalAlignment="Center" Width="280" Height="30" Click="Choice2_Click" HorizontalContentAlignment="Left" FontSize="15" Background="#CCB4B9B4" BorderBrush="White" Foreground="#FF141414"/>
+            <Button x:Name="Choice3" Content=" Choice #3" HorizontalAlignment="Center" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="280" Height="30" Click="Choice3_Click" HorizontalContentAlignment="Left" FontSize="15" Background="#CCB4B4B9" BorderBrush="White" Foreground="#FF141414"/>
+            <MediaElement x:Name="BGM" HorizontalAlignment="Left" Height="100" Margin="-102,3,0,0" VerticalAlignment="Top" Width="100" LoadedBehavior="Manual" Volume="{Binding Value, ElementName=VolumeSlider}" Source="Resources/DayOFUmbrellaAndRain.wav" />
+        </Grid>
+
+    </Grid>
+</Page>

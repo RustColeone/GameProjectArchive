@@ -1,0 +1,94 @@
+﻿Testsing initiates, please check your coding and environment
+中文显示正常,()*&^%$#@!❤❥웃유♋☮✌☏☢☠✔☑♚▲♪✈✞÷↑↓◆◇
+⊙■□△▽¿─│♥❣♂♀☿Ⓐ✍✉☣☤✘☒♛▼♫⌘☪≈←→特殊符号正常
+（）〈〉‹›﹛﹜『』〖〗［］《》〔〕{}「」【】︵︷︿︹︽_﹁﹃︻︶︸﹀︺︾ˉ﹂﹄︼
+「所有括号显示正常」，
+[Name]
+测试者
+「听得到吗，这一步姑且算是成功了」
+[Name]
+Name goes here
+Test is somewhat Successful, continue?
+
+
+
+
+
+
+
+
+
+
+this should be displayed instantly since all empty line was skipped
+[Jump]
+30
+Should not be seen
+Should not be seen
+Should not be seen
+Should not be seen
+Should not be seen
+Should be seen
+[Choice]
+30, to the first Choice ,33, to the Second Choice,36, to the third choice
+Second Option Choices
+[Choice]
+33,To the Second Choice,36,To the third Choice
+Third Option Choices
+[Choice]
+39,First Stage Test Complete
+Next Test...Character Portrait Display Test and Background Test
+[Background Image]
+School_Front.png
+Moved to a new background
+[Character Image]
+1,Bucciarati.png
+
+[Character Image]
+1,Abbacchio.png,2,Bucciarati.png
+
+[Character Image]
+1,Narancia.png,2,Abbacchio.png,3,Bucciarati.png
+
+[Character Image]
+Clear
+Play
+[BGM]
+DayOFUmbrellaAndRain.wav
+Stop
+[BGM]
+Clear
+Listening?
+Test is somewhat Successful
+[Jump]
+11
+This line is not supposed to be displayed
+[Choice]
+13
+Jumped
+[Instant Display Starts]
+   _____                .__.__     _____          __   
+  /  _  \   ______ ____ |__|__|   /  _  \________/  |_ 
+ /  /_\  \ /  ___// ___\|  |  |  /  /_\  \_  __ \   __\
+/    |    \\___ \\  \___|  |  | /    |    \  | \/|  |  
+\____|__  /____  >\___  >__|__| \____|__  /__|   |__|  
+        \/     \/     \/                \/           
+ __          __  _                              _        
+ \ \        / / | |                            | |       
+  \ \  /\  / /__| | ___ ___  _ __ ___   ___    | |_ ___  
+   \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \   | __/ _ \ 
+    \  /\  /  __/ | (_| (_) | | | | | |  __/   | || (_) |
+     \/  \/ \___|_|\___\___/|_| |_| |_|\___|    \__\___/ 
+  _______ _               _____                      
+ |__   __| |             / ____|                     
+    | |  | |__   ___    | |  __  __ _ _ __ ___   ___ 
+    | |  | '_ \ / _ \   | | |_ |/ _` | '_ ` _ \ / _ \
+    | |  | | | |  __/   | |__| | (_| | | | | | |  __/
+    |_|  |_| |_|\___|    \_____|\__,_|_| |_| |_|\___|
+[Instant Display Ended]
+[Show Image]
+HuwnC.gif
+Hi
+[Show Image]
+TestImg.gif
+[Show Image]
+WinStart.gif

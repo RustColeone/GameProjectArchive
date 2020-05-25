@@ -1,0 +1,17 @@
+Saves
+what happened
+Who are you
+What are you doing
+where am I
+ok
+
+
+line before should not exist
+//[This might be a command, probably best if we skipped]
+But this one should be seen
+//[skip;15]
+should not be seen
+should not be seen
+Should be seen
+//[choice; Retry, 1; Back, 11; Next, 17]
+Choice 3
